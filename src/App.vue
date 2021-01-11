@@ -1,9 +1,8 @@
 <template>
-  <div id="app">
+  <v-app>
 <!--    <router-view />-->
     <v-card>
       <v-toolbar
-              color="cyan"
               dark
               flat
       >
@@ -22,7 +21,7 @@
 
             <v-tab
                     v-for="item in items"
-                    :key="item"
+                    :key="item.tab"
                     :to="item.link"
             >
               {{ item.tab }}
@@ -30,9 +29,13 @@
           </v-tabs>
         </template>
       </v-toolbar>
-      <router-view />
+      <v-container fluid>
+        <v-main>
+          <router-view />
+        </v-main>
+      </v-container>
     </v-card>
-  </div>
+  </v-app>
 </template>
 
 <style>
