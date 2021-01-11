@@ -30,6 +30,7 @@ export default new Vuetify({
         warning: "#ffc107",
         info: "#009688",
         success: "#4caf50",
+        background: "#000", // Not automatically applied
       },
     },
   },

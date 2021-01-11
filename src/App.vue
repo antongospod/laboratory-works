@@ -1,6 +1,6 @@
 <template>
   <v-app>
-<!--    <router-view />-->
+    <v-main>
     <v-card>
       <v-toolbar
               dark
@@ -17,7 +17,7 @@
                   v-model="tab"
                   align-with-title
           >
-            <v-tabs-slider color="yellow"></v-tabs-slider>
+            <v-tabs-slider color="yellow darken-3"></v-tabs-slider>
 
             <v-tab
                     v-for="item in items"
@@ -29,37 +29,42 @@
           </v-tabs>
         </template>
       </v-toolbar>
-      <v-container fluid>
-        <v-main>
+      <v-container fluid class="mb-10">
           <router-view />
-        </v-main>
       </v-container>
     </v-card>
+    </v-main>
+    <v-footer
+            class="mt-auto"
+            absolute
+            padless
+            dark
+    >
+      <v-row
+              justify="center"
+              no-gutters
+      >
+        <v-btn
+                v-for="item in items"
+                :to="item.link"
+                :key="item.link"
+                color="white"
+                text
+                rounded
+                class="my-2"
+        >
+          {{ item.tab }}
+        </v-btn>
+        <v-col
+                class="py-4 text-center white--text"
+                cols="12"
+        >
+          {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+        </v-col>
+      </v-row>
+    </v-footer>
   </v-app>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
 <script>
   export default {
     data () {
@@ -72,7 +77,6 @@
           { tab: 'Функции', link: '/functions' },
 
         ],
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
       }
     },
   };

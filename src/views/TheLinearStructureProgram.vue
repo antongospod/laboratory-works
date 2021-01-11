@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <h1>Программа линейной структуры</h1>
+    <v-card-text>Задание 12. Заданы длины сторон треугольника. Найти его площадь.</v-card-text>
 
     <v-form v-model="valid">
       <v-container>
@@ -10,6 +11,7 @@
                   md="4"
           >
             <v-text-field
+                    color="yellow darken-3"
                     v-model="len1"
                     :rules="lenRules"
                     label="Введите длину для 1 стороны"
@@ -21,6 +23,7 @@
                   md="4"
           >
             <v-text-field
+                    color="yellow darken-3"
                     v-model="len2"
                     :rules="lenRules"
                     label="Введите длину для 2 стороны"
@@ -32,6 +35,7 @@
                   md="4"
           >
             <v-text-field
+                    color="yellow darken-3"
                     v-model="len3"
                     :rules="lenRules"
                     label="Введите длину для 3 стороны"
