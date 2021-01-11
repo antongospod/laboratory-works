@@ -5,8 +5,7 @@
 </template>
 
 <script>
-
 export default {
-  name: "TheLinearStructureProgram",
+  name: "TheLinearStructureProgram"
 };
 </script>

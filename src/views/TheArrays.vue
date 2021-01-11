@@ -5,8 +5,7 @@
 </template>
 
 <script>
-
 export default {
-  name: "TheArrays",
+  name: "TheArrays"
 };
 </script>

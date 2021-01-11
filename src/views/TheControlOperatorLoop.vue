@@ -4,8 +4,7 @@
   </div>
 </template>
 <script>
-
 export default {
-  name: "ControlOperatorLoop",
+  name: "ControlOperatorLoop"
 };
 </script>
