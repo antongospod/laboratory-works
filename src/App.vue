@@ -69,8 +69,20 @@
             fab
             outlined
             small
-            color="fafafa"
-            href="https://github.com/antongospod"
+            color="#2684FF"
+            href="https://bitbucket.org/antongospodgit/"
+          >
+            <v-icon>
+              mdi-bitbucket
+            </v-icon>
+          </v-btn>
+          <v-btn
+                  class="mx-2"
+                  fab
+                  outlined
+                  small
+                  color="#fafafa"
+                  href="https://github.com/antongospod"
           >
             <v-icon>
               mdi-github
