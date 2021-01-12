@@ -1,24 +1,24 @@
-# laboratory-works
+# Лабораторные работы. Скрипченко А.С. (ИСТ)
 
-## Project setup
+## Установка зависимостей
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Компиляция для разработки
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Компиляция для продакшна (при надобности)
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### Линтер (при надобности)
 ```
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Если нет времени на компиляцию
+Моё [Демо](https://mystudy.medveddoc.com).
