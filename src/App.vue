@@ -77,12 +77,12 @@
             </v-icon>
           </v-btn>
           <v-btn
-                  class="mx-2"
-                  fab
-                  outlined
-                  small
-                  color="#fafafa"
-                  href="https://github.com/antongospod"
+            class="mx-2"
+            fab
+            outlined
+            small
+            color="#fafafa"
+            href="https://github.com/antongospod"
           >
             <v-icon>
               mdi-github
