@@ -15,7 +15,6 @@
               rounded
               outlined
               dense
-              counter="100"
               color="yellow darken-3"
               v-model="values"
               label="Введите элементы массива через запятую"
@@ -125,7 +124,6 @@ export default {
       }
       return result;
     }
-  },
-  methods: {}
+  }
 };
 </script>
