@@ -1,6 +1,6 @@
 <template>
-  <div class="arrays">
-    <h1>Функции</h1>
+  <div class="functions">
+    <h1 class="text-center">Функции</h1>
   </div>
 </template>
 

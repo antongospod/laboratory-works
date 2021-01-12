@@ -7,7 +7,7 @@ Vue.use(Vuetify);
 export default new Vuetify({
   lang: {
     locales: { ru },
-    current: "ru",
+    current: "ru"
   },
   /*Кастомная тема*/
   theme: {
@@ -19,7 +19,7 @@ export default new Vuetify({
         error: "#cf6679",
         warning: "#ffc107",
         info: "#009688",
-        success: "#4caf50",
+        success: "#4caf50"
       },
       light: {
         primary: "#0044cc",
@@ -30,8 +30,8 @@ export default new Vuetify({
         warning: "#ffc107",
         info: "#009688",
         success: "#4caf50",
-        background: "#000", // Not automatically applied
-      },
-    },
-  },
+        background: "#000" // Not automatically applied
+      }
+    }
+  }
 });
