@@ -87,7 +87,7 @@ export default {
       let str = this.string;
       let subStr = this.subString;
       if (str && subStr !== "") {
-        if (str.length < 100 && subStr < 100) {
+        if (str.length < 100) {
           return str.replace(subStr + ", ", "");
         } else {
           return "Вы ввели более 100 символов";
